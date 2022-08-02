@@ -32,8 +32,6 @@ for(let i=1; i<=100; i++); {
 */
 
 
-
-
 //wild wild life
 const wolfy = ['Wolfy', 'wolf', 16, 'yukon territory'];
 const Plantee = ['plantee', 'plant', 5000, 'mordor'];
@@ -66,8 +64,54 @@ const nturtles = ['donatello', 'leonardo', 'raphel', 'michaelanglo'];
 const C = nturtles.map(nturtles => nturtles.toUpperCase()); 
 console.log(C);
 
-
+//Methods, Revisited
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained'];
 const favmovies1 = ['Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter'];
 const favMovies2 = ['Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther']; 
 const favMovies3 = [ 'Snatch' , 'Imitation of Life', 'Fast and Furious']; 
+
+console.log(favmovies1.indexOf('Titanic')); //used to find index of an element in an array
+//use sort method The sort() method sorts the elements of an array in place and returned it in ascending order
+favMovies2.sort();
+console.log(favMovies2);
+
+//use pop method which removes the last element in an array and returns it in this case harry potter
+console.log(favmovies1.pop()); 
+
+//use push method for "Guardians of the Galaxy" push method adds a new element(item) to an array extending its lenght
+favMovies3.push('Guardians of the Galaxy');
+console.log(favMovies3); 
+
+//reverse array.. reverse first elements in an array to last and vic versa  last to first 
+const reversed = favMovies.reverse();
+console.log('reversed:', reversed);
+
+//shift method deletes first element from array and returns it
+const firstElement = favMovies2.shift();
+console.log('Fast and Furious');
+
+//7. use splice and indexof
+favMovies.splice(3,1, 'Avatar'); 
+console.log(favmovies1.indexOf('Django Unchained'));
+
+//8.slice
+console.log(favmovies1.slice(3,5));
+//9. console.log(-1);
+//10. 
+console.log(favmovies1.slice(-1)); 
+
+//Where is Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",["Lucinda", "Jacc", "Neff", "Snoop"],
+["Petunia", ["Baked Goods", "Waldo"]]];
+
+//1. Remove Eggbert 
+whereIsWaldo.slice(2,1);
+console.log(whereIsWaldo);
+//2 Change "Neff" to "No One"
+whereIsWaldo.slice(4,1,'no one');
+console.log(whereIsWaldo);
+//excited kitten
+for(let i = 0; i<20; i++){
+    console.log("love me, pet me,HSSSSS!");
+}
+
