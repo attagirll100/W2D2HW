@@ -105,13 +105,26 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",["Lucinda", "Jacc", "Neff", 
 ["Petunia", ["Baked Goods", "Waldo"]]];
 
 //1. Remove Eggbert 
-whereIsWaldo.slice(2,1);
+whereIsWaldo.slice(1,1);
 console.log(whereIsWaldo);
 //2 Change "Neff" to "No One"
-whereIsWaldo.slice(4,1,'no one');
-console.log(whereIsWaldo);
+whereIsWaldo.slice(-1,1,'no one');
+//console.log(whereIsWaldo);
+
+
 //excited kitten
 for(let i = 0; i<20; i++){
     console.log("love me, pet me,HSSSSS!");
 }
 
+//find the median
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+function median (nums) {
+    let len = nums.lenght;
+    let mid = math.floor(len/2);
+    if(len %2 !=0){
+        return nums[mid]; 
+    }
+
+    
+}
